@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Notes Sathi — Teacher uploads. Students read.</title>
+<meta name="description" content="Notes Sathi is a free notes platform for Satpuda College students. Find PDFs, PYQs, stories, bookmarks and Hindi or English study material in one place.">
+<meta name="theme-color" content="#6366f1">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="assets/icon-512.png">
+<style>
+:root{--ink:#111827;--soft:#667085;--faint:#98a2b3;--bg:#f6f7fb;--card:#fff;--line:#e4e7ec;--indigo:#6366f1;--deep:#4f46e5;--violet:#8b5cf6;--pink:#d62976;--green:#10b981;--grad:linear-gradient(135deg,#6366f1 0%,#8b5cf6 52%,#d62976 100%)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}a{color:inherit;text-decoration:none}img{display:block;max-width:100%}.wrap{max-width:1120px;margin:auto;padding:0 24px}
+.nav{height:70px;background:rgba(255,255,255,.9);border-bottom:1px solid var(--line);backdrop-filter:blur(16px);position:sticky;top:0;z-index:5}.nav-inner{height:100%;max-width:1120px;margin:auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:-.04em}.brand img{width:36px;height:36px;border-radius:11px;box-shadow:0 4px 12px #6366f133}.brand small{display:block;color:var(--soft);font-size:10px;letter-spacing:.08em;text-transform:uppercase;font-weight:600}.navlinks{display:flex;align-items:center;gap:25px;color:var(--soft);font-size:13px}.navlinks a:hover{color:var(--deep)}.navbutton{background:var(--grad);color:#fff;padding:10px 15px;border-radius:9px;font-weight:750;box-shadow:0 6px 15px #6366f133}
+.hero{padding:84px 0 70px;background:radial-gradient(circle at 76% 28%,#c4b5fd66,transparent 27%),radial-gradient(circle at 16% 90%,#fbcfe866,transparent 25%),var(--bg)}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:80px;align-items:center}.eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:.16em;color:var(--deep);font-weight:800}.hero h1{font-size:clamp(46px,7vw,78px);line-height:.99;letter-spacing:-.075em;margin:20px 0 22px;max-width:680px}.hero h1 span{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{font-size:18px;color:var(--soft);max-width:550px}.actions{display:flex;gap:12px;margin-top:30px}.primary,.secondary{padding:13px 18px;border-radius:9px;font-weight:750}.primary{color:#fff;background:var(--grad);box-shadow:0 9px 22px #6366f12e}.secondary{color:var(--deep);background:#fff;border:1px solid var(--line)}.meta{display:flex;gap:18px;color:var(--soft);font-size:12px;margin-top:25px}.meta span{border-left:2px solid #8b5cf6;padding-left:10px}.phone-stage{position:relative;max-width:370px;margin:auto;padding:13px}.phone-stage:before{content:"";position:absolute;inset:0;border-radius:34px;background:linear-gradient(135deg,#6366f1,#8b5cf6,#d62976,#fa7e1e);padding:3px;mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);mask-composite:exclude;animation:flow 6s ease-in-out infinite;background-size:200% 200%}.phone{position:relative;border:6px solid #20233b;border-radius:29px;overflow:hidden;background:#fff;box-shadow:0 28px 50px #34405433}.phone img{width:100%;aspect-ratio:9/16;object-fit:cover;object-position:top}@keyframes flow{0%,100%{background-position:0 50%}50%{background-position:100% 50%}}
+.band{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff}.band-inner{display:flex;justify-content:space-between;gap:20px;padding:15px 24px;color:var(--soft);font-size:13px}.band strong{color:var(--ink)}
+.section{padding:90px 0}.heading{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:35px}.heading h2{font-size:clamp(32px,5vw,53px);line-height:1;letter-spacing:-.065em;margin:12px 0 0}.heading p{max-width:350px;color:var(--soft);margin:0}.label{font-size:11px;text-transform:uppercase;letter-spacing:.15em;color:var(--pink);font-weight:800}
+.features{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.feature{background:#fff;border:1px solid var(--line);border-radius:15px;padding:23px;min-height:205px}.feature:hover{border-color:#c4b5fd;box-shadow:0 10px 28px #47556913}.feature-number{font-size:12px;font-weight:800;color:var(--deep)}.feature h3{margin:24px 0 7px;font-size:18px}.feature p{margin:0;color:var(--soft);font-size:13px}
+.showcase{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.showcase-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:72px;align-items:center}.showcase h2{font-size:clamp(34px,5vw,55px);letter-spacing:-.07em;line-height:1;margin:14px 0}.showcase-copy p{color:var(--soft);max-width:490px}.quote{border-left:3px solid var(--violet);padding-left:16px;color:var(--deep);font-weight:650;margin:30px 0}.shots{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;align-items:start}.shot{border:1px solid var(--line);border-radius:14px;background:#fff;padding:7px;box-shadow:0 10px 24px #34405412}.shot:nth-child(2){margin-top:28px}.shot:nth-child(3){margin-top:56px}.shot img{width:100%;aspect-ratio:9/16;object-fit:cover;object-position:top;border-radius:9px}.shot figcaption{font-size:11px;color:var(--soft);padding:7px 2px 2px}
+.storyline{display:grid;grid-template-columns:1fr 1fr;gap:18px}.story-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px;display:flex;gap:16px;align-items:center}.story-ring{width:58px;height:58px;border-radius:50%;padding:3px;background:conic-gradient(#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5,#feda75);flex:none}.story-ring img{width:100%;height:100%;object-fit:cover;border-radius:50%;border:3px solid #fff}.story-card h3{margin:0 0 3px;font-size:16px}.story-card p{margin:0;color:var(--soft);font-size:13px}
+.cta{background:var(--grad);color:#fff;text-align:center;padding:86px 24px}.cta h2{font-size:clamp(36px,5vw,60px);line-height:1;letter-spacing:-.07em;max-width:700px;margin:12px auto 18px}.cta p{color:#eeeaff;max-width:500px;margin:0 auto 28px}.cta .primary{background:#fff;color:var(--deep);display:inline-block}.footer{display:flex;justify-content:space-between;gap:20px;padding:24px;color:var(--soft);font-size:12px}.footer a{color:var(--deep);font-weight:700}
+@media(max-width:850px){.navlinks a:not(.navbutton){display:none}.hero-grid,.showcase-grid{grid-template-columns:1fr;gap:45px}.phone-stage{max-width:310px}.features{grid-template-columns:repeat(2,1fr)}.storyline{grid-template-columns:1fr}.heading{display:block}.heading p{margin-top:17px}}
+@media(max-width:520px){.wrap{padding:0 18px}.nav-inner{padding:0 18px}.hero{padding:54px 0 48px}.hero h1{font-size:53px}.hero p{font-size:16px}.actions{flex-direction:column}.actions a{text-align:center}.meta{flex-wrap:wrap;gap:10px}.features{grid-template-columns:1fr}.section{padding:58px 0}.showcase-grid{gap:28px}.shots{gap:7px}.shot{padding:5px}.shot:nth-child(2),.shot:nth-child(3){margin-top:0}.shot figcaption{font-size:10px}.story-card{padding:17px}.footer{display:block;padding:22px 18px}.footer div+div{margin-top:10px}}
+</style>
+<!-- Responsive refinement: single close gradient frame, compact spacing, balanced gallery -->
+<style>
+html,body{overflow-x:hidden;max-width:100%}
+.phone-stage{padding:0;max-width:390px}
+.phone-stage:before{display:none}
+.phone{border:5px solid transparent;background:linear-gradient(#fff,#fff) padding-box,linear-gradient(135deg,#6366f1,#8b5cf6,#d62976,#fa7e1e,#6366f1) border-box;background-size:240% 240%;animation:notesFrame 6s ease-in-out infinite;box-shadow:0 18px 34px #34405422}
+@keyframes notesFrame{0%,100%{background-position:0 50%}50%{background-position:100% 50%}}
+@media(max-width:850px){.hero-grid{gap:28px}.phone-stage{width:min(100%,300px);max-width:300px}.section{padding:66px 0}.showcase-grid{gap:28px}}
+.story-ring.story-new,.story-ring.story-lang{display:grid;place-items:center;color:#fff;font-weight:850;font-size:12px;letter-spacing:-.04em}.story-ring.story-new{background:linear-gradient(135deg,#6366f1,#8b5cf6,#d62976)}.story-ring.story-lang{background:linear-gradient(135deg,#fa7e1e,#d62976,#962fbf)}.story-ring.story-new span,.story-ring.story-lang span{width:100%;height:100%;display:grid;place-items:center;border:3px solid #fff;border-radius:50%;background:rgba(17,24,39,.16)}
+@media(max-width:520px){
+  .hero{padding:42px 0 38px}.hero-grid{gap:18px}.hero h1{margin:14px 0 16px}.actions{margin-top:20px;gap:8px}.meta{margin-top:16px;gap:8px}.phone-stage{width:276px;max-width:276px}.phone{border-width:4px;border-radius:25px}
+  .section{padding:46px 0}.heading{margin-bottom:22px}.heading h2{margin-top:9px}.features{gap:10px}.feature{min-height:0;padding:19px;border-radius:14px}.feature h3{margin:16px 0 6px}
+  .showcase-grid{gap:22px}.showcase-copy p{margin:9px 0}.quote{margin:18px 0}.shots{display:flex!important;width:100%;gap:7px;align-items:flex-start}.shots .shot{flex:1 1 0;width:0;min-width:0;margin:0!important;padding:5px}.shots .shot img{width:100%;aspect-ratio:9/16}.shots .shot figcaption{font-size:10px;line-height:1.2;overflow-wrap:normal;word-break:normal;padding:5px 1px 1px}.storyline{gap:10px}.story-card{padding:15px}
+}
+</style>
+
+
+<style>
+@media(max-width:520px){
+  .wrap{padding-left:22px;padding-right:22px}
+  .nav-inner{padding-left:20px;padding-right:20px}
+  .hero-grid,.features,.showcase-grid,.storyline,.heading{width:100%;max-width:100%}
+  .feature,.story-card{margin-left:1px;margin-right:1px}
+  .shots{margin-left:0;margin-right:0}
+  .band-inner{padding-left:22px;padding-right:22px}
+}
+</style>
+<style>
+.showcase-copy .quote{margin-bottom:0}
+.showcase-copy > .primary{display:inline-block;margin-top:24px}
+@media(max-width:520px){.showcase-copy > .primary{margin-top:18px}}
+</style>
+<style>
+.meta{gap:8px;flex-wrap:wrap;align-items:center;margin-top:22px}
+.meta span{border:1px solid #e4e7ec;border-left:0;padding:7px 10px;border-radius:999px;background:rgba(255,255,255,.78);color:#667085;font-size:11px;line-height:1;box-shadow:0 3px 10px rgba(52,64,84,.06)}
+.meta span:before{content:"";width:6px;height:6px;border-radius:50%;background:#6366f1;margin-right:7px;box-shadow:0 0 0 3px #eef2ff}
+.meta span:nth-child(2):before{background:#10b981;box-shadow:0 0 0 3px #d1fae5}
+.meta span:nth-child(3):before{background:#f59e0b;box-shadow:0 0 0 3px #fef3c7}
+@media(max-width:520px){.meta{margin-top:14px;gap:6px}.meta span{padding:7px 9px;font-size:10px}}
+</style>
+<style>
+/* Refined trust row */
+.meta{display:grid;grid-template-columns:repeat(3,1fr);gap:0;width:min(100%,500px);margin-top:24px;border-top:1px solid rgba(99,102,241,.18);border-bottom:1px solid rgba(99,102,241,.18);padding:0;}
+.meta span,.meta span:nth-child(2),.meta span:nth-child(3){border:0;border-right:1px solid rgba(99,102,241,.16);border-radius:0;background:transparent;box-shadow:none;padding:12px 12px;color:#667085;font-size:11px;line-height:1.25;text-align:center;display:flex;justify-content:center;align-items:center;min-height:42px}
+.meta span:last-child{border-right:0}.meta span:before,.meta span:nth-child(2):before,.meta span:nth-child(3):before{display:none}
+@media(max-width:520px){.meta{width:100%;margin-top:14px}.meta span,.meta span:nth-child(2),.meta span:nth-child(3){padding:10px 5px;font-size:10px;min-height:38px}}
+</style>
+<style>
+.phone{border-radius:18px}
+@media(max-width:520px){.phone{border-radius:16px}}
+</style>
+<style>
+.team{padding:78px 0;background:#f6f7fb}.team-head{text-align:center;margin-bottom:36px}.team-head h2{font-size:clamp(32px,5vw,52px);line-height:1;letter-spacing:-.065em;margin:11px 0}.team-head p{color:#667085;margin:0 auto;max-width:470px}.team-tree{max-width:720px;margin:auto;position:relative}.team-lead{display:flex;justify-content:center}.person{background:#fff;border:1px solid #e4e7ec;border-radius:16px;padding:20px 22px;text-align:center;box-shadow:0 10px 25px rgba(52,64,84,.08)}.person.lead{width:230px;position:relative}.person.lead:after{content:"";position:absolute;width:1px;height:35px;background:#c4b5fd;left:50%;top:100%}.team-pair{display:grid;grid-template-columns:1fr 1fr;gap:68px;max-width:500px;margin:70px auto 0;position:relative}.team-pair:before{content:"";position:absolute;top:-35px;left:25%;right:25%;height:1px;background:#c4b5fd}.team-pair:after{content:"";position:absolute;top:-35px;left:50%;height:35px;border-left:1px solid #c4b5fd}.person-avatar{width:66px;height:66px;border-radius:50%;margin:0 auto 12px;display:grid;place-items:center;color:#fff;font-size:20px;font-weight:850;letter-spacing:-.06em;border:4px solid #fff;box-shadow:0 0 0 2px #8b5cf6}.lead .person-avatar{background:linear-gradient(135deg,#6366f1,#8b5cf6,#d62976)}.pair-one .person-avatar{background:linear-gradient(135deg,#fa7e1e,#d62976)}.pair-two .person-avatar{background:linear-gradient(135deg,#10b981,#6366f1)}.person h3{font-size:16px;margin:0 0 3px}.person p{font-size:12px;color:#667085;margin:0}@media(max-width:520px){.team{padding:54px 0}.team-pair{gap:10px;margin-top:62px}.person{padding:16px 10px}.person.lead{width:205px}.person-avatar{width:58px;height:58px;font-size:17px}.team-pair:before{left:22%;right:22%}}
+</style>
+<style>
+.team-lead{display:grid;grid-template-columns:1fr 1fr;gap:68px;max-width:500px;margin:0 auto;position:relative}
+.team-lead:before{content:"";position:absolute;left:25%;right:25%;bottom:-35px;height:1px;background:#c4b5fd}
+.team-lead:after{content:"";position:absolute;left:50%;bottom:-35px;height:35px;border-left:1px solid #c4b5fd}
+.team-lead .person{width:auto;position:relative}
+.team-lead .person:after{content:"";position:absolute;left:50%;bottom:-35px;height:35px;border-left:1px solid #c4b5fd}
+.team-pair{display:flex;justify-content:center;max-width:none;margin:70px auto 0;position:relative}
+.team-pair:before{content:"";position:absolute;top:-35px;left:50%;right:auto;width:1px;height:35px;background:#c4b5fd}
+.team-pair:after{display:none}
+.team-pair .person{width:230px}
+@media(max-width:520px){.team-lead{gap:10px}.team-lead .person{padding:16px 10px}.team-pair{margin-top:62px}.team-pair .person{width:205px}.team-lead:before{left:22%;right:22%}}
+</style>
+<style>
+.hero .team{padding:28px 0 8px;background:transparent}.hero .team-head{text-align:left;margin-bottom:18px}.hero .team-head .label{color:#c4b5fd}.hero .team-head h2{color:#fff;font-size:25px;margin:7px 0}.hero .team-head p{color:#dbe4ff;font-size:12px;margin:0;max-width:360px}.hero .person{padding:12px 10px;border-color:rgba(255,255,255,.24);background:rgba(255,255,255,.94);box-shadow:0 8px 18px #11182722}.hero .person-avatar{width:42px;height:42px;font-size:13px;margin-bottom:7px}.hero .person h3{font-size:12px}.hero .person p{font-size:10px;color:#667085}.hero .team-lead{gap:10px;max-width:390px}.hero .team-pair{margin-top:42px}.hero .team-pair .person{width:150px}.hero .team-lead:before,.hero .team-lead:after,.hero .team-lead .person:after,.hero .team-pair:before{background:#c4b5fd}
+@media(max-width:520px){.hero .team{padding:22px 0 4px}.hero .team-head h2{font-size:22px}.hero .team-lead{gap:7px}.hero .team-pair{margin-top:38px}.hero .team-pair .person{width:145px}}
+</style>
+<style>
+.hero .team{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);border-radius:18px;padding:20px 18px 16px;backdrop-filter:blur(12px);box-shadow:inset 0 1px 0 rgba(255,255,255,.12),0 12px 28px rgba(17,24,39,.12)}
+.hero .team-head{margin-bottom:16px}.hero .team-head .label{color:#c4b5fd}.hero .team-head h2{color:#fff}.hero .team-head p{color:rgba(255,255,255,.72)}
+.hero .person,.hero .team-pair .person{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.2);color:#fff;box-shadow:none}.hero .person h3{color:#fff}.hero .person p{color:rgba(255,255,255,.68)}
+.hero .person-avatar{border-color:rgba(255,255,255,.75)}
+@media(max-width:520px){.hero .team{padding:18px 12px 14px;border-radius:15px}}
+</style>
+<style>
+/* Light hero treatment for readable developer tree */
+.hero .team{background:rgba(255,255,255,.82);border:1px solid rgba(99,102,241,.18);box-shadow:0 12px 28px rgba(52,64,84,.10);backdrop-filter:blur(14px)}
+.hero .team-head .label{color:#6366f1}.hero .team-head h2{color:#111827}.hero .team-head p{color:#667085}
+.hero .person,.hero .team-pair .person{background:rgba(255,255,255,.92);border-color:#e4e7ec;color:#111827;box-shadow:0 6px 16px rgba(52,64,84,.06)}
+.hero .person h3{color:#111827}.hero .person p{color:#667085}.hero .person-avatar{border-color:#fff}
+.hero .team-lead:before,.hero .team-lead:after,.hero .team-lead .person:after,.hero .team-pair:before{background:#a78bfa}
+</style>
+<style>
+/* Developer tree — clean editorial nodes, not stacked cards */
+.hero .team{background:transparent;border:0;box-shadow:none;backdrop-filter:none;padding:24px 0 8px}
+.hero .team-head{margin-bottom:20px}.hero .team-head h2{font-size:24px}.hero .team-head p{max-width:380px}
+.hero .team-lead,.hero .team-pair{gap:30px}.hero .person,.hero .team-pair .person{background:transparent;border:0;box-shadow:none;border-radius:0;padding:4px 8px}
+.hero .person-avatar{width:54px;height:54px;margin-bottom:8px;box-shadow:0 0 0 2px rgba(139,92,246,.55),0 6px 14px rgba(52,64,84,.13)}
+.hero .person h3{font-size:13px}.hero .person p{font-size:10px}.hero .team-lead:before{left:25%;right:25%;bottom:-29px}.hero .team-lead:after{bottom:-29px;height:29px}.hero .team-lead .person:after{bottom:-29px;height:29px}.hero .team-pair{margin-top:58px}.hero .team-pair:before{top:-29px;height:29px}
+@media(max-width:520px){.hero .team{padding:20px 0 5px}.hero .team-lead{gap:18px}.hero .team-pair{margin-top:52px}.hero .person,.hero .team-pair .person{padding:4px}.hero .person-avatar{width:50px;height:50px}}
+</style>
+<style>
+/* Reimagined People tab */
+.hero .people-tab{padding:22px 0 8px;background:transparent;border:0;box-shadow:none;backdrop-filter:none}
+.people-tabbar{display:flex;gap:18px;align-items:center;margin-bottom:14px;color:#98a2b3;font-size:10px;text-transform:uppercase;letter-spacing:.12em;font-weight:800}.people-tab-active{color:#6366f1;border-bottom:2px solid #6366f1;padding-bottom:6px}
+.hero .people-tab .team-head{margin-bottom:16px;text-align:left}.hero .people-tab .team-head h2{font-size:24px;color:#111827;margin:0 0 8px}.hero .people-tab .team-head p{color:#667085;font-size:12px;max-width:420px}
+.people-list{display:flex;flex-direction:column;border-top:1px solid rgba(99,102,241,.18)}.person-line{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid rgba(99,102,241,.14);color:#111827}.person-line .person-avatar{width:42px;height:42px;flex:none;margin:0;border:0;box-shadow:none;color:#fff;font-size:12px}.lead-avatar{background:linear-gradient(135deg,#6366f1,#8b5cf6,#d62976)}.contributor-avatar{background:linear-gradient(135deg,#fa7e1e,#d62976)}.student-avatar{background:linear-gradient(135deg,#10b981,#6366f1)}.person-info{min-width:0}.person-line h3{font-size:13px;margin:0 0 2px}.person-line p{font-size:10px;margin:0;color:#667085;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.person-arrow{margin-left:auto;color:#6366f1;font-size:18px}
+@media(max-width:520px){.hero .people-tab{padding:18px 0 5px}.people-tabbar{gap:14px}.hero .people-tab .team-head h2{font-size:21px}.person-line{padding:10px 0}.person-line .person-avatar{width:38px;height:38px}}
+</style>
+<style>
+.people-tabbar a{color:#98a2b3;text-decoration:none}.people-tabbar a:hover{color:#6366f1}.people-tabbar a.people-tab-active{color:#6366f1}.people-tabbar a:focus-visible{outline:2px solid #6366f1;outline-offset:4px;border-radius:3px}#developer,#inside,#features,#stories,#legal{scroll-margin-top:82px}
+</style>
+<style>
+.people-tabbar{display:flex;align-items:flex-end;gap:24px;margin:0 0 14px;padding:0;border-bottom:1px solid rgba(99,102,241,.16)}
+.people-tabbar a{position:relative;display:inline-block;padding:0 1px 9px;color:#98a2b3;font-size:10px;line-height:1;text-decoration:none;text-transform:uppercase;letter-spacing:.12em;font-weight:800}
+.people-tabbar a:after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:2px;background:#6366f1;transform:scaleX(0);transform-origin:center;transition:transform .2s ease}
+.people-tabbar a:hover,.people-tabbar a.people-tab-active{color:#4f46e5}.people-tabbar a.people-tab-active:after{transform:scaleX(1)}
+.hero .people-tab{padding-top:16px;padding-bottom:3px}.hero .people-tab .team-head{margin-bottom:12px}
+@media(max-width:520px){.people-tabbar{gap:18px;margin-bottom:12px}.people-tabbar a{padding-bottom:8px}.hero .people-tab{padding-top:13px}}
+</style>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  var tabs=[].slice.call(document.querySelectorAll('.people-tabbar a'));
+  function setActive(id){tabs.forEach(function(tab){var active=tab.getAttribute('href')==='#'+id;tab.classList.toggle('people-tab-active',active);tab.setAttribute('aria-selected',active?'true':'false');});}
+  tabs.forEach(function(tab){tab.addEventListener('click',function(){setActive(tab.getAttribute('href').slice(1));});});
+  if('IntersectionObserver' in window){
+    var observer=new IntersectionObserver(function(entries){entries.forEach(function(entry){if(entry.isIntersecting)setActive(entry.target.id);});},{rootMargin:'-28% 0px -58% 0px',threshold:0});
+    ['developer','features','inside','legal'].forEach(function(id){var section=document.getElementById(id);if(section)observer.observe(section);});
+  }
+  window.addEventListener('scroll',function(){if(window.scrollY<420)setActive('developer');},{passive:true});
+});
+</script>
+<style>
+/* Remove browser-like blue link treatment while keeping tabs clickable */
+.people-tabbar a,.people-tabbar a:hover,.people-tabbar a.people-tab-active{color:#667085;text-decoration:none}
+.people-tabbar a:after,.people-tabbar a.people-tab-active:after{display:none!important}
+.people-tabbar a.people-tab-active{font-weight:850;color:#111827}
+</style>
+<style>
+.install-btn{display:block;margin:13px 0 0;padding:9px 14px;border:1px solid rgba(99,102,241,.28);border-radius:8px;background:rgba(255,255,255,.72);color:#4f46e5;font-size:12px;font-weight:800;cursor:pointer;box-shadow:0 4px 12px rgba(52,64,84,.06)}.install-btn:hover{background:#fff;border-color:#6366f1}.install-btn[hidden]{display:none}
+@media(max-width:520px){.install-btn{width:100%;margin-top:10px}}
+</style>
+<style>
+.install-btn{border:0;background:linear-gradient(135deg,#6366f1,#8b5cf6,#d62976);color:#fff;box-shadow:0 7px 16px rgba(99,102,241,.25);font-weight:800}
+.install-btn:hover{background:linear-gradient(135deg,#4f46e5,#7c3aed,#be185d);color:#fff}
+.nav-install{border:1px solid rgba(99,102,241,.25);background:#eef2ff;color:#4f46e5;border-radius:8px;padding:8px 12px;font-size:12px;font-weight:800;cursor:pointer}.nav-install:hover{background:#e0e7ff}
+@media(max-width:850px){.nav-install{display:none}}
+</style>
+<style>
+.nav-install{width:36px;height:36px;padding:0;display:grid;place-items:center}.nav-install svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+@media(max-width:850px){.nav-install{display:grid}}
+@media(max-width:520px){.nav-install{width:32px;height:32px}.nav-install svg{width:16px;height:16px}}
+</style>
+<style>
+.install-btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;margin:13px 0 0;padding:10px 15px;border:1px solid #d0d5dd;border-radius:8px;background:#fff;color:#344054;box-shadow:0 2px 6px rgba(16,24,40,.06);font-size:12px;font-weight:750;letter-spacing:0;transition:border-color .2s ease,background .2s ease,transform .2s ease}.install-btn:hover{background:#f8f9fc;border-color:#98a2b3;color:#1d2939;transform:translateY(-1px)}
+.nav-install{background:#fff;color:#475467;border:1px solid #d0d5dd;box-shadow:0 1px 3px rgba(16,24,40,.08)}.nav-install:hover{background:#f8f9fc;color:#344054;border-color:#98a2b3}
+</style>
+<style>
+.install-btn{width:auto!important;align-self:flex-start;display:inline-flex!important;padding:8px 12px;border:1px solid #d0d5dd;border-radius:7px;background:#fff;color:#475467;box-shadow:none;font-size:11px;font-weight:700}.install-btn:hover{background:#f9fafb;border-color:#98a2b3;color:#1d2939;transform:none}
+@media(max-width:520px){.install-btn{width:auto!important;align-self:center;padding:8px 13px}}
+</style>
+<style>
+.install-float{position:fixed;right:18px;bottom:20px;z-index:20;display:flex;align-items:center;gap:3px;padding:5px 6px 5px 5px;background:rgba(255,255,255,.96);border:1px solid #e4e7ec;border-radius:12px;box-shadow:0 10px 28px rgba(16,24,40,.14);backdrop-filter:blur(12px)}.install-float .install-btn{margin:0!important;border:0!important;box-shadow:none!important;background:transparent!important;color:#344054;padding:8px 10px}.install-float .install-btn:hover{background:#f2f4f7!important;border-radius:8px}.install-dismiss{width:25px;height:25px;border:0;border-radius:50%;background:transparent;color:#98a2b3;font-size:18px;line-height:1;cursor:pointer}.install-dismiss:hover{background:#f2f4f7;color:#344054}.install-float.is-dismissed{display:none}@media(max-width:520px){.install-float{left:16px;right:16px;bottom:16px;justify-content:space-between}.install-float .install-btn{flex:1}}
+</style>
+<style>
+.install-float{right:18px;bottom:20px;padding:0;background:transparent;border:0;border-radius:999px;box-shadow:none;backdrop-filter:none}.install-float .install-btn{border:1px solid #d0d5dd!important;border-radius:999px!important;background:#fff!important;color:#344054!important;padding:11px 17px!important;box-shadow:0 8px 20px rgba(16,24,40,.14)!important}.install-float .install-btn:hover{background:#f8f9fc!important;border-color:#98a2b3}.install-dismiss{position:absolute;right:-6px;top:-7px;width:20px;height:20px;background:#fff;border:1px solid #d0d5dd;box-shadow:0 2px 6px rgba(16,24,40,.12);font-size:14px}.install-float.is-dismissed{display:none}@media(max-width:520px){.install-float{left:auto;right:14px;bottom:16px}.install-float .install-btn{padding:10px 14px!important}}
+</style>
+<style>
+.legal-top{margin-left:auto;margin-right:18px;padding:8px 12px;border:1px solid #e4e7ec;border-radius:8px;background:#fff;color:#475467;font-size:12px;font-weight:750;text-decoration:none;box-shadow:0 1px 3px rgba(16,24,40,.06)}.legal-top:hover{background:#f8f9fc;color:#4f46e5;border-color:#c7d2fe}.navlinks{margin-left:0}
+@media(max-width:850px){.legal-top{margin-left:auto;margin-right:10px;padding:7px 9px;font-size:11px}.navlinks{display:none}}
+</style>
+<style>
+.legal-preview{padding:70px 0;background:#fff;border-top:1px solid #e4e7ec;border-bottom:1px solid #e4e7ec}.legal-preview-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:28px}.legal-preview-head h2{font-size:clamp(30px,5vw,48px);line-height:1;letter-spacing:-.06em;margin:10px 0 0}.legal-preview-head p{max-width:360px;color:#667085;margin:0}.legal-links{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.legal-links a{display:grid;grid-template-columns:28px 1fr 16px;align-items:center;gap:8px;padding:14px 13px;border:1px solid #e4e7ec;border-radius:10px;background:#f8f9fc;color:#344054;text-decoration:none;font-size:12px}.legal-links a:hover{border-color:#a5b4fc;background:#eef2ff;color:#4f46e5}.legal-links span{color:#98a2b3;font-size:10px;font-weight:800}.legal-links b{font-size:12px}.legal-links i{font-style:normal;color:#6366f1}.footer{align-items:flex-start}.footer-legal{display:flex;flex-wrap:wrap;gap:8px 12px;margin-top:10px}.footer-legal a{font-size:11px;color:#667085;font-weight:500}.footer-legal a:hover{color:#4f46e5}@media(max-width:850px){.legal-links{grid-template-columns:repeat(2,1fr)}.legal-preview-head{display:block}.legal-preview-head p{margin-top:14px}}@media(max-width:520px){.legal-preview{padding:52px 0}.legal-links{grid-template-columns:1fr;gap:8px}.footer-legal{gap:7px 10px}}
+</style>
+<style>
+.legal-top{position:relative;overflow:hidden;border:0;background:linear-gradient(110deg,#6366f1,#8b5cf6,#d62976,#6366f1);background-size:240% 100%;color:#fff;box-shadow:0 5px 14px rgba(99,102,241,.22);animation:legalGlow 6s ease-in-out infinite}.legal-top:hover{color:#fff;transform:translateY(-1px);box-shadow:0 7px 18px rgba(99,102,241,.3)}@keyframes legalGlow{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+.people-tabbar{gap:20px}.people-tabbar a{white-space:nowrap}
+@media(max-width:520px){.people-tabbar{gap:14px}.people-tabbar a{font-size:9px}}
+</style>
+<style>
+.profile-avatar{overflow:hidden;aspect-ratio:1/1;background:#eef2ff;border-radius:50%;padding:0!important;display:block!important}.profile-avatar img{display:block;width:100%;height:100%;aspect-ratio:1/1;object-fit:cover;object-position:center;border-radius:50%}
+</style>
+<style>
+.people-list{width:100%;max-width:100%;overflow:hidden}.person-line{width:100%;min-width:0}.person-info{flex:1;min-width:0}.person-line p{white-space:normal;overflow-wrap:anywhere;word-break:normal}.person-arrow{flex:0 0 auto}
+</style>
+<style>
+html,body{max-width:100%;overflow-x:hidden}.hero .people-tab{width:100%;max-width:100%;overflow:hidden}.people-list{display:block;width:100%;max-width:100%;overflow:hidden}.person-line{display:grid!important;grid-template-columns:42px minmax(0,1fr) 20px;align-items:center;width:100%;min-width:0;gap:10px}.person-info{min-width:0;width:100%}.person-line h3,.person-line p{max-width:100%;overflow:hidden;text-overflow:ellipsis}.person-line p{white-space:normal;line-height:1.3;overflow-wrap:anywhere}.profile-avatar{width:42px!important;height:42px!important;min-width:42px!important;max-width:42px!important}.person-arrow{width:20px;text-align:right}
+@media(max-width:520px){.person-line{grid-template-columns:38px minmax(0,1fr) 18px;gap:8px}.profile-avatar{width:38px!important;height:38px!important;min-width:38px!important;max-width:38px!important}.person-arrow{width:18px;font-size:16px}}
+</style>
+<style> a.person-line{color:inherit;text-decoration:none}a.person-line:hover{background:rgba(99,102,241,.045)} </style>
+</head>
+<body>
+<header class="nav"><nav class="nav-inner" aria-label="Main navigation"><a class="brand" href="#top"><img src="assets/icon-512.png" alt="Notes Sathi icon"><span>Notes Sathi<small>College notes, made simple</small></span></a><a class="legal-top" href="legal.html">Legal</a><div class="navlinks"><a href="#features">What it does</a><a href="#inside">Inside the app</a><a href="#developer">Developer</a><a href="#stories">Stories</a><a class="navbutton" href="https://vinaysoni-in.github.io/Notes-Sathi/" target="_blank" rel="noopener">Open the app ↗</a></div></nav></header>
+<main id="top">
+<section class="hero"><div class="wrap hero-grid"><div><div class="eyebrow">Free for every student · English + हिंदी</div><h1>Teacher uploads.<br><span>Students read.</span></h1><p>Notes Sathi is a free notes platform for every student of Satpuda College of Engineering and Polytechnic. Teachers publish PDFs through GitHub; students get a social-style feed, stories, PYQs, search, bookmarks, and offline reading.</p><div class="actions"><a class="primary" href="https://vinaysoni-in.github.io/Notes-Sathi/" target="_blank" rel="noopener">Open Notes Sathi ↗</a><a class="secondary" href="#features">See what’s inside</a></div><section class="team people-tab" id="developer"><div class="team-head"><div class="people-tabbar" role="tablist" aria-label="Notes Sathi sections"><a class="people-tab-active" href="#developer" role="tab" aria-selected="true">People</a><a href="#features" role="tab" aria-selected="false">Future</a><a href="#inside" role="tab" aria-selected="false">Project</a><a href="#legal" role="tab" aria-selected="false">Legal</a></div><h2>Meet the people behind Notes Sathi.</h2><p>A small open project shaped by the person who builds it, the people who contribute, and the students who use it.</p></div><div class="people-list"><a class="person-line" href="https://github.com/vinaysoni-in" target="_blank" rel="noopener"><div class="person-avatar profile-avatar"><img src="Profile-images/vinay-soni-dp.png" width="512" height="512" alt="Vinay Soni"></div><div class="person-info"><h3>Vinay Soni</h3><p>Developer · Publisher · Interviews Handler</p></div><span class="person-arrow">↗</span></a><article class="person-line"><div class="person-avatar profile-avatar"><img src="Profile-images/gousiya-khan-dp.png" width="512" height="512" alt="Gousiya Khan"></div><div class="person-info"><h3>Gousiya Khan</h3><p>Collecting Notes &amp; Subject Information · Building Structures</p></div></article><a class="person-line" href="https://github.com/vishalsoni-in" target="_blank" rel="noopener"><div class="person-avatar profile-avatar"><img src="Profile-images/vishal-soni-dp.png" width="512" height="512" alt="Vishal Soni"></div><div class="person-info"><h3>Vishal Soni</h3><p>Marketing &amp; Promotion</p></div><span class="person-arrow">↗</span></a></div></section><div class="meta"><span>No login required</span><span>Works offline</span><span>Free forever</span></div></div><div class="phone-stage"><div class="phone"><img src="assets/screen2.png" alt="Notes Sathi home feed with stories and study notes"></div></div></div></section>
+
+<div class="band"><div class="wrap band-inner"><strong>Publish once. Reach every student.</strong><span>Upload dashboard · PDFs · Stories · PYQs · Semester filters</span></div></div>
+<section class="section" id="features"><div class="wrap"><div class="heading"><div><div class="label">The useful parts</div><h2>Everything students need to find the next note.</h2></div><p>A lightweight, mobile-first classroom workflow: publish once, keep notes organised, and make every upload reachable without a login or server.</p></div><div class="features"><article class="feature"><div class="feature-number">01</div><h3>Upload dashboard</h3><p>Teachers sign in once with a fine-grained GitHub token, choose program, branch, semester and subject, then publish PDFs from inside the app.</p></article><article class="feature"><div class="feature-number">02</div><h3>Drag, tag, publish</h3><p>Drop English and हिंदी PDFs, detect language pairs automatically, track progress, and safely overwrite existing files when needed.</p></article><article class="feature"><div class="feature-number">03</div><h3>Stories + NEW tags</h3><p>Uploads from the last 24 hours get a NEW label; story rings keep recent material visible for up to 72 hours.</p></article><article class="feature"><div class="feature-number">04</div><h3>Read PDFs here</h3><p>Use the embedded PDF viewer for pages, pinch-zoom, download, and open-in-tab reading on any device.</p></article></div></div></section>
+
+<section class="showcase" id="inside"><div class="wrap section showcase-grid"><div class="showcase-copy"><div class="label">A calmer study rhythm</div><h2>From upload to revision in a few clear taps.</h2><p>Teachers can publish directly from the in-app Upload tab: sign in once with a fine-grained GitHub token, choose program, branch, semester and subject, then drag and drop PDFs. The dashboard handles language tagging, upload progress, existing-file updates, and the repository commit; students see the new material through stories and NEW badges. The token stays in the teacher’s browser and should be cleared on shared devices.</p><p class="quote">“The teacher uploads. Every student receives.”</p><a class="primary" href="https://github.com/VinaySoni-IN/Notes-Sathi" target="_blank" rel="noopener">Explore the project ↗</a></div><div class="shots"><figure class="shot"><img src="assets/screen1.png" alt="Notes Sathi semester onboarding"><figcaption>Pick a semester</figcaption></figure><figure class="shot"><img src="assets/screen4.png" alt="Notes Sathi embedded PDF viewer"><figcaption>Read the PDF</figcaption></figure><figure class="shot"><img src="assets/screen5.png" alt="Notes Sathi files grouped by subject"><figcaption>Browse subjects</figcaption></figure></div></div></section>
+<section class="section" id="stories"><div class="wrap"><div class="heading"><div><div class="label">Built for a real campus</div><h2>Keep the important things visible.</h2></div><p>No noisy dashboard. Just the notes, contributors, permanent quick links, and study tools students use.</p></div><div class="storyline"><div class="story-card"><div class="story-ring story-new" aria-hidden="true"><span>24h</span></div><div><h3>New notes, at a glance</h3><p>Fresh uploads appear as story rings, while permanent official and important links stay available for quick access.</p></div></div><div class="story-card"><div class="story-ring story-lang" aria-hidden="true"><span>Aअ</span></div><div><h3>English + हिंदी</h3><p>English and हिंदी files stay together, with a simple language switch when both versions are available.</p></div></div></div></div></section>
+<section class="legal-preview" id="legal"><div class="wrap"><div class="legal-preview-head"><div><div class="label">Legal Terms and Documents</div><h2>Proper Legal Documents</h2></div><p>Notes Sathi keeps the rules, responsibilities, privacy details, and contribution terms available before anyone publishes or reads.</p></div><div class="legal-links"><a href="legal/01-TERMS-AND-CONDITIONS.html"><span>01</span><b>Terms &amp; Conditions</b><i>↗</i></a><a href="legal/02-PRIVACY-POLICY.html"><span>02</span><b>Privacy Policy</b><i>↗</i></a><a href="legal/03-COPYRIGHT-POLICY-AND-TAKEDOWN-NOTICE.html"><span>03</span><b>Copyright &amp; takedown</b><i>↗</i></a><a href="legal/04-DISCLAIMER.html"><span>04</span><b>Disclaimer</b><i>↗</i></a><a href="legal/05-ACCEPTABLE-USE-POLICY.html"><span>05</span><b>Acceptable use</b><i>↗</i></a><a href="legal/06-GRIEVANCE-REDRESSAL-AND-FIRST-COMPLAINT-REPORT.html"><span>06</span><b>Grievance redressal</b><i>↗</i></a><a href="legal/07-CONTENT-CONTRIBUTION-LICENSE.html"><span>07</span><b>Content contribution</b><i>↗</i></a><a href="legal/00-INDEX.html"><span>00</span><b>Legal index</b><i>↗</i></a></div></div></section>
+<section class="cta"><div class="label" style="color:#e0e7ff">Ready for the next chapter?</div><h2>Open the notes. Keep moving.</h2><p>Notes Sathi is free for students of Satpuda College of Engineering and Polytechnic, installable as a PWA and designed to keep reading available offline.</p><a class="primary" href="https://vinaysoni-in.github.io/Notes-Sathi/" target="_blank" rel="noopener">Open the live app ↗</a></section>
+</main>
+<footer class="footer wrap"><div><div>© 2026 Notes Sathi · <a href="legal.html">Legal hub</a></div><div class="footer-legal"><a href="legal/00-INDEX.html">Index</a><a href="legal/01-TERMS-AND-CONDITIONS.html">Terms</a><a href="legal/02-PRIVACY-POLICY.html">Privacy</a><a href="legal/03-COPYRIGHT-POLICY-AND-TAKEDOWN-NOTICE.html">Copyright</a><a href="legal/04-DISCLAIMER.html">Disclaimer</a><a href="legal/05-ACCEPTABLE-USE-POLICY.html">Acceptable use</a><a href="legal/06-GRIEVANCE-REDRESSAL-AND-FIRST-COMPLAINT-REPORT.html">Grievance</a><a href="legal/07-CONTENT-CONTRIBUTION-LICENSE.html">Contribution</a></div></div><div><a href="https://github.com/VinaySoni-IN/Notes-Sathi" target="_blank" rel="noopener">Source on GitHub ↗</a> · <a href="https://wa.me/918989031351" target="_blank" rel="noopener">Need help on WhatsApp</a></div></footer>
+<div class="install-float" id="installFloat" role="region" aria-label="Install Notes Sathi"><button class="install-btn" id="installBtn" type="button">↓&nbsp; Create shortcut</button><button class="install-dismiss" id="installDismiss" type="button" aria-label="Dismiss install prompt">×</button></div>
+<script>
+(function(){
+  var deferredPrompt, buttons=[document.getElementById('installBtn'),document.getElementById('topInstallBtn')].filter(Boolean);
+  window.addEventListener('beforeinstallprompt',function(event){event.preventDefault();deferredPrompt=event;});
+  buttons.forEach(function(button){button.addEventListener('click',async function(){
+    if(!deferredPrompt){alert('Open your browser menu and choose Add to Home screen or Create shortcut.');return;}
+    deferredPrompt.prompt();
+    await deferredPrompt.userChoice;
+    deferredPrompt=null;
+  });});
+  window.addEventListener('appinstalled',function(){});
+  var installFloat=document.getElementById('installFloat'), dismiss=document.getElementById('installDismiss');
+  if(dismiss) dismiss.addEventListener('click',function(){installFloat.classList.add('is-dismissed');try{sessionStorage.setItem('notesInstallDismissed','1');}catch(e){}});
+  try{if(sessionStorage.getItem('notesInstallDismissed')==='1')installFloat.classList.add('is-dismissed');}catch(e){}
+})();
+</script>
+<script>if("serviceWorker" in navigator){window.addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){});});}</script>
+
+</body>
+</html>
