@@ -1,0 +1,219 @@
+================================================================================
+                    NOTES SATHI — PRIVACY POLICY
+================================================================================
+Version    : 2.0
+Effective  : 06 October 2026
+Operator   : Vinay Soni ("Owner", "we", "us", "our")
+Platform   : https://vinaysoni-in.github.io/Notes-Sathi/
+Repository : https://github.com/VinaySoni-IN/Notes-Sathi
+================================================================================
+
+1. THE SHORT VERSION (PLAIN SUMMARY)
+--------------------------------------------------------------------------------
+READING NOTES COLLECTS NOTHING. There are:
+  * NO account needed to read — just open and study;
+  * NO advertisements;
+  * NO analytics or tracking of any kind;
+  * NO cookies that follow you around;
+  * NO sale, sharing or transfer of your data to anyone — ever.
+Everything the app remembers about you as a reader (your theme, your branch,
+your semester, your bookmarks) is saved ONLY in your own browser, on your
+own device, and never leaves it.
+
+OPTIONAL STUDENT ACCOUNTS (introduced October 2026): if you CHOOSE to create
+an account for read-ticks and reactions, we store exactly four things —
+your display name, e-mail, phone number and your reactions — with Google
+Firebase. Nothing else. Passwords are hashed by Google and can never be
+seen or recovered by anyone, including us. You can request deletion of your
+account data anytime via vinay.sanjaysoni@gmail.com.
+
+This policy explains the details, and is made in compliance with the Digital
+Personal Data Protection Act, 2023 (India).
+
+2. DEFINITIONS
+--------------------------------------------------------------------------------
+2.1  "Personal Data" has the meaning given in the Digital Personal Data
+     Protection Act, 2023 ("DPDP Act").
+2.2  "Local Storage" means the browser technology (window.localStorage) used
+     by the app to save preferences on your device.
+2.3  "Contributor" means a teacher / person who publishes notes using the
+     Upload Dashboard.
+2.4  "Student Account" means the optional account a student may create to
+     use read-ticks (✅) and reactions (❤️). Reading notes never requires
+     an account.
+
+3. WHAT WE COLLECT (AND WHAT WE DON'T)
+--------------------------------------------------------------------------------
+3.1  READERS (no account): the Platform does not collect, store, process,
+     transmit, share, sell or otherwise handle ANY Personal Data. It does
+     NOT operate:
+     (a)  any user account system;
+     (b)  any analytics, telemetry, crash-reporting or fingerprinting service;
+     (c)  any advertising or ad-network SDK;
+     (d)  any third-party tracker, pixel or tag;
+     (e)  any server or database of its own — the entire site is static
+          hosting on GitHub Pages.
+
+3.2  Because no Personal Data is collected from readers, no consent is
+     required under the DPDP Act for the mere reading of notes.
+
+3.3  STUDENT ACCOUNTS (optional, opt-in only): creating an account stores
+     exactly the following with Google Firebase (Spark plan):
+     (a)  Display name — shown beside your reactions and on your two-letter
+          avatar (initials);
+     (b)  E-mail address — your login ID and password-reset channel;
+     (c)  Phone number — collected for identity verification during the
+          manual approval process; NEVER displayed publicly, visible only
+          to the Grievance Officer (admin);
+     (d)  Reactions — which notes you read (✅) or marked helpful (❤️),
+          with time-stamps.
+     Your PASSWORD is stored only as a cryptographic (scrypt) hash by
+     Google Firebase Authentication — it is never visible to the Platform,
+     never transmitted to us, and cannot be recovered by anyone.
+
+3.4  WHERE IT IS PROCESSED: account data is stored on Google Firebase
+     servers (project: notes-sathi-ae2e5). Google LLC acts as the
+     infrastructure/processor; the Platform is the data fiduciary.
+     No other third party receives any account data.
+
+3.5  PURPOSE & MINIMISATION: account data is used solely to (a) operate
+     read-ticks and reactions, (b) verify students during the manual
+     approval process, and (c) moderate the community (rename or remove
+     abusive names, remove reactions). It is NOT used for marketing,
+     profiling or any automated decision-making, and is never sold or
+     shared.
+
+4. WHAT IS STORED, AND WHERE
+--------------------------------------------------------------------------------
+4.1  The app uses Local Storage in YOUR browser only. At any time you can
+     erase everything by clearing your browser's site data. The items are:
+     (a)  Theme preference (light / dark mode);
+     (b)  Your chosen Program, Branch and Semester (e.g. Polytechnic /
+          Civil / Semester 3);
+     (c)  Bookmarked (saved) notes — a list of note identifiers;
+     (d)  "Seen" markers that power the NEW badge and story rings;
+     (e)  Acknowledgment that you accepted the terms;
+     (f)  For Contributors ONLY: the "remembered" GitHub sign-in state
+          described in Clause 6;
+     (g)  For signed-in students ONLY: a Firebase login session token, so
+          you stay signed in.
+     None of the reader items (a)-(e) contain your name, phone number,
+     e-mail, or any identifier that can identify you as a natural person.
+
+4.2  This data never leaves your device. The app contains no code that
+     transmits Local Storage contents anywhere.
+
+5. PUBLIC NATURE OF THE REPOSITORY
+--------------------------------------------------------------------------------
+5.1  The notes themselves live in a PUBLIC GitHub repository. Everything a
+     Contributor uploads is, by design, publicly visible at
+     https://github.com/VinaySoni-IN/Notes-Sathi, including the file name,
+     file size, upload date and the public GitHub identity of the account
+     that uploaded it. This is an inherent, disclosed feature of the
+     Platform — Contributors should upload only material they are happy to
+     host publicly.
+
+5.2  GitHub, as the host, may process standard server logs (IP addresses,
+     request times) under its own privacy policy available at
+     https://github.com/site/privacy. The Owner has no access to, and no
+     control over, GitHub's logs.
+
+6. CONTRIBUTOR TOKENS (UPLOAD DASHBOARD)
+--------------------------------------------------------------------------------
+6.1  A Contributor signs in with a GitHub fine-grained personal access token
+     ("Token") that the Contributor creates personally on github.com.
+
+6.2  If "Remember on this device" is ticked, the Token is stored in the
+     Contributor's own browser's Local Storage; otherwise it is kept only in
+     memory for the session. The Token is transmitted only to GitHub's
+     official API (api.github.com) over HTTPS, and only from the
+     Contributor's own device.
+
+6.3  The Owner NEVER receives, views, stores or logs any Token. Contributors
+     are advised to use a fine-grained Token limited to this repository with
+     Contents read/write permission only, and to sign out on shared
+     computers.
+
+7. CHILDREN AND STUDENTS WHO ARE MINORS
+--------------------------------------------------------------------------------
+7.1  READING: many users are students under 18. Reading collects no data
+     whatsoever, so no child's data is processed while simply studying.
+
+7.2  STUDENT ACCOUNTS: under the DPDP Act, 2023, processing the personal
+     data of a child (under 18) requires verifiable parental consent.
+     Therefore, students under 18 who wish to create a Student Account
+     must have a parent or guardian send a short consent message (with the
+     student's name) to vinay.sanjaysoni@gmail.com or WhatsApp
+     +91 89890 31351 BEFORE the account is approved. Accounts without
+     such consent on file for a minor remain unapproved.
+
+7.3  Parents or guardians who become aware of any material concerning a
+     child may raise it through the Grievance channels in Clause 10; such
+     reports receive the highest priority.
+
+8. YOUR RIGHTS
+--------------------------------------------------------------------------------
+8.1  Under the DPDP Act, data principals have rights of access,
+     correction, erasure, nomination and grievance redressal.
+
+     READERS (no account): we hold nothing — everything is already in your
+     hands:
+     (a)  To "erase" all your data: clear the site's data in your browser
+          settings, or use your browser's private/incognito mode;
+     (b)  To withdraw the terms acknowledgment: clear site data.
+
+     STUDENT ACCOUNTS: write to vinay.sanjaysoni@gmail.com (or any channel
+     in Clause 10) and we will:
+     (c)  ACCESS — tell you what data your account holds;
+     (d)  CORRECT — fix your name, e-mail or phone number;
+     (e)  ERASE — delete your account profile and all your reactions
+          (processed within 15 days; Firebase may retain a deleted-account
+          record for a short period as per its own policy);
+     (f)  WITHDRAW CONSENT — you may delete your account or simply sign
+          out; read-ticks and reactions stop immediately. Withdrawing
+          consent does not affect reading — that always stays free and
+          account-free.
+
+8.2  Contributors who wish to have their uploaded content (and the public
+     record of their GitHub identity next to it) removed may request removal
+     under the takedown and grievance procedures in
+     legal/03-COPYRIGHT-POLICY-AND-TAKEDOWN-NOTICE.txt and
+     legal/06-GRIEVANCE-REDRESSAL-AND-FIRST-COMPLAINT-REPORT.txt. Note that
+     prior git history on GitHub may retain older commits; the Owner will
+     use GitHub's support channels where complete history erasure is
+     genuinely required.
+
+9. EXTERNAL LINKS
+--------------------------------------------------------------------------------
+9.1  The app links to external services — the college website, WhatsApp,
+     Instagram and GitHub. If you contact the Owner through WhatsApp or
+     Instagram, their respective privacy policies apply to that
+     conversation, not this one. This policy covers only the Notes Sathi
+     app and repository.
+
+10. GRIEVANCE OFFICER AND CONTACT
+--------------------------------------------------------------------------------
+10.1 Grievance Officer: Vinay Soni (Founder / Developer)
+     WhatsApp : +91 89890 31351
+     E-mail   : vinay.sanjaysoni@gmail.com
+     Instagram: @vinay.sanjay.soni
+     Written  : https://github.com/VinaySoni-IN/Notes-Sathi/issues
+10.2 Privacy complaints are acknowledged within 48 hours and resolved within
+     15 days, in line with the timelines in
+     legal/06-GRIEVANCE-REDRESSAL-AND-FIRST-COMPLAINT-REPORT.txt.
+
+11. CHANGES TO THIS POLICY
+--------------------------------------------------------------------------------
+11.1 This policy may be updated by publishing a new version in the legal/
+     folder of the repository. The "Last updated" date above will change.
+     Material changes will be highlighted in the app.
+
+12. GOVERNING LAW AND JURISDICTION
+--------------------------------------------------------------------------------
+12.1 This policy is governed by the laws of India, including the Digital
+     Personal Data Protection Act, 2023 and the Information Technology Act,
+     2000. Courts at Balaghat, Madhya Pradesh shall have exclusive
+     jurisdiction.
+================================================================================
+END OF PRIVACY POLICY
+================================================================================
